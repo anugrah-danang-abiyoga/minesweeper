@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
 var board = {} 
-
+var boardDimension = 5;
+var initialTime;
+var timeInterval; 
+var timeStarted = false;
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
