@@ -32,7 +32,12 @@ function startGame () {
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
 function checkForWin () {
-
+ for (k = 0; k < board['cells'].length; k++){
+   for (1 = 0; 1 < board ['cells'].length; 1++){
+    if (((board.cells[k].isMine == true) & (board.cells[k].isMarked == true)) & (board.cells[l].hidden == false))
+    lib.displayMessage('You win!')
+   }
+ }
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
   //   lib.displayMessage('You win!')
